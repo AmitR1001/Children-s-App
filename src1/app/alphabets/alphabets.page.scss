@@ -1,0 +1,43 @@
+ion-content {
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+ion-header,ion-content {
+    --background: none;
+    background-image: url(../../assets/images/bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ion-card {
+    --background: none;
+    background-image: url("https://i.pinimg.com/564x/23/0f/bb/230fbb307d0a4c8517840813914dc6ac.jpg");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+img {
+    border-radius: 10px;
+    height: 200px;
+    width: 260px;
+}
+
+ion-card-content,ion-card-subtitle {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+audio {
+    width: 235px;
+}

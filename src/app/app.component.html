@@ -1,3 +1,45 @@
 <ion-app>
+  <ion-menu menuId="main-menu" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-menu-toggle>
+          <ion-menu-button>close</ion-menu-button>
+        </ion-menu-toggle>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item [routerLink]="['tabs/tab1']">
+          <ion-menu-toggle>
+            <img src="../assets/icon/kid.png" alt=""> Learn
+          </ion-menu-toggle>
+        </ion-item>
+        <ion-item [routerLink]="['tabs/tab2']">
+          <ion-menu-toggle>
+            <img src="../assets/icon/pencil.png" alt=""> Practice
+          </ion-menu-toggle>
+        </ion-item>
+        <ion-item [routerLink]="['tabs/tab3']">
+          <ion-menu-toggle>
+            <img src="../assets/icon/podium.png" alt=""> Leaderboard
+          </ion-menu-toggle>
+        </ion-item>
+        <ion-item [routerLink]="['feedback']">
+          <ion-menu-toggle>
+            <img src="../assets/icon/customer-feedback.png" alt=""> Feedback
+          </ion-menu-toggle>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <div id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+  </div>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>

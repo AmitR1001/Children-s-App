@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align:center" class="tracking-in-contract">Feedback</ion-title>
+  </ion-toolbar>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <ion-row>
+      <ion-col>
+        Was it helpful? <br>
+        <ion-radio-group value="help" required>
+          <br>
+          <ion-item>
+            <ion-label>Yes</ion-label>
+            <ion-radio slot="start" value="yes"></ion-radio>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="no"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-col>
+    </ion-row>
+    <label for="vol">Rating (Between 0 and 10):</label>
+    <!-- <input type="range" id="vol" name="vol" min="0" max="100"><br> -->
+    <ion-range [min]="0" [max]="10" [value]="5" [pin]="true" [ticks]="true" [snaps]="true"></ion-range>
+    <!-- <rating [(rating)]="rating"></rating> -->
+    
+    <div class="col-auto">
+      <ion-button type="submit"  (click)="presentAlert()">Submit</ion-button>
+    </div>
+  
+  </div>
+  
+</ion-content>

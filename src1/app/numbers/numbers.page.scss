@@ -1,0 +1,31 @@
+ion-content {
+    // overwrite inline styles
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  img {
+    border-radius: 10px;
+    height: 200px;
+    width: 260px;
+  }
+  
+  ion-card-title{
+    text-align: center;
+  }
+  
+  ion-card-subtitle {
+    text-align: center;
+    margin-top: 7px;
+    margin-left: -14px;
+  }
+  
+  audio {
+    width: 235px;
+  }
+  

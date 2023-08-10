@@ -1,0 +1,43 @@
+ion-content {
+  // overwrite inline styles
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+ion-card-header{
+  text-align: center;
+}
+ion-card-content {
+  padding: 0;
+  margin: 0;
+}
+
+ion-grid{
+  padding: 0px;
+  margin: 5px;
+}
+
+ion-col{
+  width: 140px;
+  height: 155px;
+  padding: 0px;
+}
+
+ion-card.ios.hydrated {
+  margin-left: 8px;
+  width: 118px;
+  height: 126px;
+  padding: 0px;
+}
+
+.container{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}

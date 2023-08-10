@@ -1,0 +1,59 @@
+ion-content>ion-header {
+    padding-top: 20px;
+    
+}
+
+ion-content {
+    // overwrite inline styles
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+ion-header,
+ion-content {
+    --background: none;
+    background-image: url(../../../assets/images/bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome {
+    font-size: 250%;
+    justify-content: center;
+    text-align: center;
+    font-family: MisterVampire;
+    bottom: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(253, 253, 253, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #db0dee;
+    /* Grey text */
+}
+
+
+ion-card{
+    background: rgba(186, 3, 241, 0.5);
+}
+
+
+img{
+    height: 200px;
+    width: 150px;
+    border-radius: 50%;
+    float:left;
+}
+
+h3{
+    float:right;
+    padding-right: 10%;
+    color: black;
+    font-family: mouise;
+}

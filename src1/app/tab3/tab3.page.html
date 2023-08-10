@@ -1,0 +1,92 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-menu-toggle menu="main-menu" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-menu-toggle>
+    <ion-title>
+      Leaderboard
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+
+  <h2 style="text-align: center;color:#8D72E1">Alphabets</h2>
+  <ion-grid class="ion-border">
+    <ion-row>
+      <ion-col>
+        Sr. No.
+      </ion-col>
+      <ion-col>
+        Name
+      </ion-col>
+      <ion-col>
+        Score
+      </ion-col>
+      <!-- <ion-col>
+        Date
+      </ion-col>
+      <ion-col>
+        Time
+      </ion-col> -->
+    </ion-row>
+    <ion-row *ngFor="let item of A_Score;let i=index;">
+      <ion-col>
+        {{i+1}}
+      </ion-col>
+      <ion-col>
+        {{item.p_name}}
+      </ion-col>
+      <ion-col>
+        {{item.p_score}}
+      </ion-col>
+      <!-- <ion-col>
+        {{item.p_date}}
+      </ion-col>
+      <ion-col>
+        {{item.p_time}}
+      </ion-col> -->
+    </ion-row>
+  </ion-grid>
+
+  <br>
+  <h2 style="text-align: center;color:#8D72E1">Numbers</h2>
+  <ion-grid class="ion-border">
+    <ion-row>
+      <ion-col>
+        Sr. No.
+      </ion-col>
+      <ion-col>
+        Name
+      </ion-col>
+      <ion-col>
+        Score
+      </ion-col>
+      <!-- <ion-col>
+        Date
+      </ion-col>
+      <ion-col>
+        Time
+      </ion-col> -->
+    </ion-row>
+    <ion-row *ngFor="let item of B_Score;let i=index;">
+      <ion-col>
+        {{i+1}}
+      </ion-col>
+      <ion-col>
+        {{item.p_name}}
+      </ion-col>
+      <ion-col>
+        {{item.p_score}}
+      </ion-col>
+      <!-- <ion-col>
+        {{item.p_date}}
+      </ion-col>
+      <ion-col>
+        {{item.p_time}}
+      </ion-col> -->
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

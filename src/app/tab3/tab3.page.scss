@@ -1,0 +1,25 @@
+ion-content {
+  // overwrite inline styles
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.ion-border{
+  border: 1px solid rgb(225, 220, 220);
+  padding: 0;
+}
+
+ion-row{
+  border: 1px solid rgb(219, 216, 216);
+}
+
+ion-col{
+  width: auto;
+  height: auto;
+  text-align: center;
+}

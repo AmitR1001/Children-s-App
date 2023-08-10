@@ -1,17 +1,92 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+      <ion-menu-toggle menu="main-menu" slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-menu-toggle>
     <ion-title>
-      Tab 1
+      Learn
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card routerLink="alphabet">
+          <ion-card-header>
+            <ion-card-title><img src="../../assets/icon/abc.png" alt=""></ion-card-title>
+            <ion-card-subtitle><strong>Alphabets</strong> </ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card routerLink="numbers">
+          <ion-card-header>
+            <ion-card-title><img src="../../assets/icon/numbers.png" alt=""></ion-card-title>
+            <ion-card-subtitle><strong>Numbers</strong> </ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card routerLink="colors">
+          <ion-card-header>
+            <ion-card-title><img src="../../assets/icon/color-palette.png" alt=""></ion-card-title>
+            <ion-card-subtitle><strong>Colors</strong> </ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card routerLink="shapes">
+          <ion-card-header>
+            <ion-card-title><img src="../../assets/icon/shapes.png" alt=""></ion-card-title>
+            <ion-card-subtitle><strong>Shapes</strong> </ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <h2 style="color:honeydew;text-align:center">Useful videos</h2>
+  <div class="container">
+
+    <!-- Alphabets -->
+    Alphabets
+    <iframe width="90%" height="250" src="https://www.youtube.com/embed/drlIUqRYM-w" title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+<br><br>
+    <!-- Numbers -->
+    Numbers
+    <video width="90%" height="180" controls>
+      <source src="../../assets/videos/Counting 1-10.mp4" type="video/mp4">
+    </video>
+
+<br><br>
+    <!-- Colors -->
+    Colors
+    <video width="90%" height="180" controls>
+      <source src="../../assets/videos/Let's Learn The Colors.mp4" type="video/mp4">
+    </video>
+
+<br><br>
+
+    <!-- Shapes -->
+    Shapes
+    <iframe width="90%" height="250" src="https://www.youtube.com/embed/guNdJ5MtX1A" title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
 </ion-content>

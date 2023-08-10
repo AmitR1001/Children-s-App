@@ -1,0 +1,107 @@
+<ion-content>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Alphabet Quiz</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <div class="que">
+      <p class="questions" id="question1">C for ....?</p>
+      <ion-grid>
+
+        <ion-row>
+          <input type="radio" name="answer1" value="wrong" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/apple.jpg" alt="apple" />
+          </ion-col>
+          <input type="radio" name="answer1" value="correct" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/baseball.jpg" alt="apple" />
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <input type="radio" name="answer1" value="correct" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/clock.png" alt="apple" />
+          </ion-col>
+          <input type="radio" name="answer1" value="wrong" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/donkey.jpg" alt="apple" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <div class="que">
+      <img class="questions" id="question2" src="https://media4.giphy.com/media/S8IB8TmUs9ra5jJOEy/giphy.gif?cid=ecf05e47b7fkzguzjki27z3fk1a7fzvrs70tvp8tlsw26rw2&rid=giphy.gif&ct=g" alt="">
+      <ion-grid>
+        <ion-row>
+          <input type="radio" name="answer2" value="correct" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/elephant.jpg" alt="apple" />
+          </ion-col>
+          <input type="radio" name="answer2" value="wrong" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/apple.jpg" alt="apple" />
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <input type="radio" name="answer2" value="wrong" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/clock.png" alt="apple" />
+          </ion-col>
+          <input type="radio" name="answer2" value="wrong" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/baseball.jpg" alt="apple" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <div class="que">
+      <p class="questions" id="question3">D for ....?</p>
+      <ion-grid>
+        <ion-row>
+          <input type="radio" name="answer3" value="wrong" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/apple.jpg" alt="apple" />
+          </ion-col>
+          <input type="radio" name="answer3" value="wrong" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/baseball.jpg" alt="apple" />
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <input type="radio" name="answer3" value="wrong" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/clock.png" alt="apple" />
+          </ion-col>
+          <input type="radio" name="answer3" value="correct" />
+          <ion-col>
+            <img src="../../../assets/Alphabets/donkey.jpg" alt="apple" />
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-card>
+
+
+  <button  class="submit"
+  (click)="getResults();"
+  type="submit">Submit</button>
+
+  <ion-card>
+    <h2 id="results-h">Result</h2>
+    <div id="results">
+      <p id="right">Total Correct Answers</p>
+      <p id="wrong">Total Wrong Answers</p>
+    </div>
+  </ion-card>
+</ion-content>

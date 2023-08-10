@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>Numbers</ion-title> -->
+    <ion-tab-button tab="tab2">
+      <ion-label>GoBack</ion-label>
+    </ion-tab-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let qb of qbnk;">
+    <ion-header>
+      <ion-card-title>
+        <audio controls>
+          <source src="{{qb.question}}" type="audio/mp3">
+        </audio>
+      </ion-card-title>
+      <ion-card-subtitle>
+        <ion-radio-group [allowEmptySelection]="true" [(ngModel)]="ans" *ngFor="let i of [0,1]">
+          <ion-item>
+            <img src="{{qb.opimages[i]}}" alt="{{qb.options[i]}}">
+            <ion-radio slot="end" value="{{qb.options[i]}}"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-card-subtitle>
+      <ion-card-content class="card-content">
+        <ion-button [disabled]="isQuestionAnswered(qb.id)" (click)="checkAnswer(qb.id)">Check Answer</ion-button>
+        <ion-input class="custom" [(ngModel)]="qb.verdict" [ngStyle]="{'color':getColor(qb.id)}"></ion-input>
+      </ion-card-content>
+    </ion-header>
+  </ion-card>
+
+  <div class="ET">
+    <ion-button color="success" style="width: 70%;" fill="solid" [disabled]="isTestEnded()" (click)="EndTest()">End Test
+    </ion-button>
+  </div>
+
+</ion-content>

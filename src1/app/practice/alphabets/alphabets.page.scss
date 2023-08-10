@@ -1,0 +1,46 @@
+ion-content {
+  // overwrite inline styles
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+img {
+  border-radius: 10px;
+  height: 90%;
+  width: 100px;
+}
+
+ion-card-subtitle {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
+
+ion-card-content.card-content {
+  padding: 0;
+  // margin: auto 0;
+  text-align: center;
+}
+
+audio {
+  width: 235px;
+  height: 70px;
+  margin-left: 5px;
+}
+
+
+ion-input.custom {
+    --padding-bottom: 0px;
+    --padding-end: 0px;
+    --padding-top: 0px;
+    font: 1.4em sans-serif;
+}
+
+.ET{
+    text-align: center;
+}

@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Feedback</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h4 class="head">Parents Your feedback is important to us! <br> Please
+    help us to improve our App.
+  </h4>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Did you achieve your goal</ion-label>
+      <ion-radio-group value="goal" required>
+        <br>
+        <div class="agoal">
+          <ion-item lines="none">
+            <ion-label>Yes</ion-label>
+            <ion-radio slot="start" value="yes"></ion-radio>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="no"></ion-radio>
+          </ion-item>
+        </div>
+      </ion-radio-group>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Please rate the app</ion-label>
+      <div class="rate"><br>
+        <ion-icon name="happy-outline" *ngFor="let num of [1, 2, 3, 4, 5]" (click)="rate(num)"
+          [ngStyle]="{'color':getColor(num)}"></ion-icon>
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Feedback</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <br>
+  <div class="ET">
+    <ion-button color="warning" style="width: 70%;" fill="solid" (click)="presentAlert()">
+      Submit
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>alphabets</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let al of Alphabets;let i=index;">
+    <ion-card-content (click)="onClick(i)">
+      <img id="{{al.name}}" src="{{al.image}}" alt="{{al.name}}" />
+    </ion-card-content>
+    <ion-card-subtitle>
+      <audio controls>
+        <source src="{{al.sound}}" type="audio/mp3" />
+      </audio>
+    </ion-card-subtitle>
+  </ion-card>
+</ion-content>

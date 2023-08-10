@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="flex-center">
+    <ion-card>
+      <img src="../../../assets/images/SPIT_LOGO.jpg" alt="" />
+      <ion-card-header>
+        <ion-card-title>Select a user type to login</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button fill="clear" size="full" (click)="Login()">I am a &nbsp;
+          <p>Student?</p>
+        </ion-button>
+        <ion-button fill="clear" size="full" (click)="Register()">I am a &nbsp;
+          <p>Parent?</p>
+        </ion-button>
+        <ion-button fill="clear" size="full" color="danger" (click)="GuestPage()">Login as a Guest</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

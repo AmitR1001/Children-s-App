@@ -1,17 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-menu-toggle menu="main-menu" slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-menu-toggle>
     <ion-title>
-      Tab 2
+      Practice
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
+  <ion-card routerLink="alphabet">
+    <ion-card-header>
+      <ion-card-title><img src="../../assets/icon/abc.png" alt=""></ion-card-title>
+      <ion-card-subtitle><strong>Alphabets</strong> </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card routerLink="numbers">
+    <ion-card-header>
+      <ion-card-title><img src="../../assets/icon/numbers.png" alt=""></ion-card-title>
+      <ion-card-subtitle><strong>Numbers</strong> </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card routerLink="colors">
+    <ion-card-header>
+      <ion-card-title><img src="../../assets/icon/color-palette.png" alt=""></ion-card-title>
+      <ion-card-subtitle><strong>Colors</strong> </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+  <ion-card routerLink="shapes">
+    <ion-card-header>
+      <ion-card-title><img src="../../assets/icon/shapes.png" alt=""></ion-card-title>
+      <ion-card-subtitle><strong>Shapes</strong> </ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
+
 </ion-content>

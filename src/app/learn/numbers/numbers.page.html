@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Numbers</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card *ngFor="let num of Numbers;let i=index;">
+  <ion-card-header>
+    <ion-card-title>{{num.name}}</ion-card-title>
+    <ion-card-subtitle>
+      <audio controls>
+        <source src="{{num.sound}}" type="audio/mp3">
+      </audio>
+    </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content (click)="onClick(i)">
+    <img id="{{num.name}}" src="{{num.image}}" alt="{{num.name}}">
+  </ion-card-content>
+</ion-card>
+</ion-content>

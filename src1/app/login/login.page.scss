@@ -1,0 +1,37 @@
+ion-button {
+    text-transform: initial;
+}
+
+img {
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 40%;
+}
+
+ion-card-title {
+    text-align: center;
+
+}
+
+p {
+    color: red;
+}
+
+ion-content {
+    // --background:#F1F1F1;
+    --background: none;
+    background-image: url('https://img.freepik.com/free-photo/pastel-blue-vignette-concrete-textured-background_53876-102637.jpg?w=1380&t=st=1665370811~exp=1665371411~hmac=a69c63096ac0ea72906acb289dc2f608dfa8f8b0ee11a79423053f36f1e8a4db');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+ion-button{
+    padding-top:15px ;
+    height: 50px;
+    
+}
